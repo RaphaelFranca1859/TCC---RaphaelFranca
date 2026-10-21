@@ -1,0 +1,9 @@
+Flask>=3.1
+flask-cors>=6.0
+pandas>=3.0
+numpy>=2.0
+openpyxl>=3.1
+chardet>=5.2
+pyarrow>=17.0      # acelera as operacoes de texto do pandas (ingestao 2 a 3 vezes mais rapida)
+pymongo>=4.9       # persistencia opcional de configuracoes (MONGO_URI)
+gunicorn>=22.0     # servidor de producao

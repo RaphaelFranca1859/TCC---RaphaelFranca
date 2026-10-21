@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+backend/data/configs/
+backend/data/benchmark_*.json
+frontend/node_modules/
+frontend/dist/
+e2e/shots/
+.venv/
