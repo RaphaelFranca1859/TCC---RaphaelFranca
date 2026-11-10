@@ -1,0 +1,1486 @@
+[
+ {
+  "arquivo": "01_BCB_IPCA_mensal_2015-2024.xlsx",
+  "linhas": 120,
+  "abas": [
+   "Sheet1"
+  ],
+  "notas": [],
+  "colunas": [
+   {
+    "nome": "Data",
+    "tipo": "temporal",
+    "distintos": 120,
+    "ausentes_pct": 0.0,
+    "motivo_ignorada": null
+   },
+   {
+    "nome": "IPCA_mensal_pct",
+    "tipo": "numeric",
+    "distintos": 88,
+    "ausentes_pct": 0.0,
+    "motivo_ignorada": null
+   }
+  ],
+  "graficos": [
+   {
+    "regra": "R5",
+    "tipo": "line",
+    "titulo": "Média de IPCA_mensal_pct por mês",
+    "avisos": []
+   },
+   {
+    "regra": "R1",
+    "tipo": "histogram",
+    "titulo": "Distribuição de IPCA_mensal_pct",
+    "avisos": []
+   }
+  ],
+  "registro": [
+   "Variáveis: 1 numérica(s), 0 categórica(s), 1 temporal(is).",
+   "Agregação automática: média para 'IPCA_mensal_pct' (o nome sugere valor unitário ou taxa); soma para as demais colunas numéricas.",
+   "R5 disparada: 'IPCA_mensal_pct' ao longo de 'Data' (granularidade mês).",
+   "2 gráfico(s) gerado(s)."
+  ],
+  "tempo_s": 0.11
+ },
+ {
+  "arquivo": "02_BCB_Dolar_diario_2023-2024.xlsx",
+  "linhas": 502,
+  "abas": [
+   "Sheet1"
+  ],
+  "notas": [],
+  "colunas": [
+   {
+    "nome": "Data",
+    "tipo": "temporal",
+    "distintos": 502,
+    "ausentes_pct": 0.0,
+    "motivo_ignorada": null
+   },
+   {
+    "nome": "Dolar_venda_R$",
+    "tipo": "numeric",
+    "distintos": 489,
+    "ausentes_pct": 0.0,
+    "motivo_ignorada": null
+   }
+  ],
+  "graficos": [
+   {
+    "regra": "R5",
+    "tipo": "line",
+    "titulo": "Soma de Dolar_venda_R$ por mês",
+    "avisos": []
+   },
+   {
+    "regra": "R1",
+    "tipo": "histogram",
+    "titulo": "Distribuição de Dolar_venda_R$",
+    "avisos": []
+   }
+  ],
+  "registro": [
+   "Variáveis: 1 numérica(s), 0 categórica(s), 1 temporal(is).",
+   "R5 disparada: 'Dolar_venda_R$' ao longo de 'Data' (granularidade mês).",
+   "2 gráfico(s) gerado(s)."
+  ],
+  "tempo_s": 0.02
+ },
+ {
+  "arquivo": "03_BCB_Selic_mensal_2015-2024.xlsx",
+  "linhas": 120,
+  "abas": [
+   "Sheet1"
+  ],
+  "notas": [],
+  "colunas": [
+   {
+    "nome": "Data",
+    "tipo": "temporal",
+    "distintos": 120,
+    "ausentes_pct": 0.0,
+    "motivo_ignorada": null
+   },
+   {
+    "nome": "Selic_pct_aa",
+    "tipo": "numeric",
+    "distintos": 66,
+    "ausentes_pct": 0.0,
+    "motivo_ignorada": null
+   }
+  ],
+  "graficos": [
+   {
+    "regra": "R5",
+    "tipo": "line",
+    "titulo": "Média de Selic_pct_aa por mês",
+    "avisos": []
+   },
+   {
+    "regra": "R1",
+    "tipo": "histogram",
+    "titulo": "Distribuição de Selic_pct_aa",
+    "avisos": []
+   }
+  ],
+  "registro": [
+   "Variáveis: 1 numérica(s), 0 categórica(s), 1 temporal(is).",
+   "Agregação automática: média para 'Selic_pct_aa' (o nome sugere valor unitário ou taxa); soma para as demais colunas numéricas.",
+   "R5 disparada: 'Selic_pct_aa' ao longo de 'Data' (granularidade mês).",
+   "2 gráfico(s) gerado(s)."
+  ],
+  "tempo_s": 0.02
+ },
+ {
+  "arquivo": "04_Superstore_vendas_varejo.xlsx",
+  "linhas": 10800,
+  "abas": [
+   "Sheet1"
+  ],
+  "notas": [
+   "Coluna 'Order Date' convertida de texto para data.",
+   "Coluna 'Ship Date' convertida de texto para data."
+  ],
+  "colunas": [
+   {
+    "nome": "Row ID",
+    "tipo": "ignored",
+    "distintos": 10001,
+    "ausentes_pct": 0.0,
+    "motivo_ignorada": "Texto livre ou identificador (quase todos os valores são únicos)."
+   },
+   {
+    "nome": "Order ID",
+    "tipo": "categorical",
+    "distintos": 5015,
+    "ausentes_pct": 0.0,
+    "motivo_ignorada": null
+   },
+   {
+    "nome": "Order Date",
+    "tipo": "temporal",
+    "distintos": 1236,
+    "ausentes_pct": 7.5,
+    "motivo_ignorada": null
+   },
+   {
+    "nome": "Ship Date",
+    "tipo": "temporal",
+    "distintos": 1334,
+    "ausentes_pct": 7.5,
+    "motivo_ignorada": null
+   },
+   {
+    "nome": "Ship Mode",
+    "tipo": "categorical",
+    "distintos": 4,
+    "ausentes_pct": 7.5,
+    "motivo_ignorada": null
+   },
+   {
+    "nome": "Customer ID",
+    "tipo": "categorical",
+    "distintos": 793,
+    "ausentes_pct": 7.5,
+    "motivo_ignorada": null
+   },
+   {
+    "nome": "Customer Name",
+    "tipo": "categorical",
+    "distintos": 793,
+    "ausentes_pct": 7.5,
+    "motivo_ignorada": null
+   },
+   {
+    "nome": "Segment",
+    "tipo": "categorical",
+    "distintos": 3,
+    "ausentes_pct": 7.5,
+    "motivo_ignorada": null
+   },
+   {
+    "nome": "Country",
+    "tipo": "categorical",
+    "distintos": 1,
+    "ausentes_pct": 7.5,
+    "motivo_ignorada": null
+   },
+   {
+    "nome": "City",
+    "tipo": "categorical",
+    "distintos": 531,
+    "ausentes_pct": 7.5,
+    "motivo_ignorada": null
+   },
+   {
+    "nome": "State",
+    "tipo": "categorical",
+    "distintos": 49,
+    "ausentes_pct": 7.5,
+    "motivo_ignorada": null
+   },
+   {
+    "nome": "Postal Code",
+    "tipo": "ignored",
+    "distintos": 630,
+    "ausentes_pct": 7.6,
+    "motivo_ignorada": "Parece um código (CEP, ISO etc.): somar ou tirar a média não faz sentido."
+   },
+   {
+    "nome": "Region",
+    "tipo": "categorical",
+    "distintos": 4,
+    "ausentes_pct": 7.5,
+    "motivo_ignorada": null
+   },
+   {
+    "nome": "Product ID",
+    "tipo": "categorical",
+    "distintos": 1862,
+    "ausentes_pct": 7.5,
+    "motivo_ignorada": null
+   },
+   {
+    "nome": "Category",
+    "tipo": "categorical",
+    "distintos": 3,
+    "ausentes_pct": 7.5,
+    "motivo_ignorada": null
+   },
+   {
+    "nome": "Sub-Category",
+    "tipo": "categorical",
+    "distintos": 17,
+    "ausentes_pct": 7.5,
+    "motivo_ignorada": null
+   },
+   {
+    "nome": "Product Name",
+    "tipo": "categorical",
+    "distintos": 1850,
+    "ausentes_pct": 7.5,
+    "motivo_ignorada": null
+   },
+   {
+    "nome": "Sales",
+    "tipo": "numeric",
+    "distintos": 5825,
+    "ausentes_pct": 7.5,
+    "motivo_ignorada": null
+   },
+   {
+    "nome": "Quantity",
+    "tipo": "numeric",
+    "distintos": 14,
+    "ausentes_pct": 7.5,
+    "motivo_ignorada": null
+   },
+   {
+    "nome": "Discount",
+    "tipo": "numeric",
+    "distintos": 12,
+    "ausentes_pct": 7.5,
+    "motivo_ignorada": null
+   },
+   {
+    "nome": "Profit",
+    "tipo": "numeric",
+    "distintos": 7287,
+    "ausentes_pct": 7.5,
+    "motivo_ignorada": null
+   }
+  ],
+  "graficos": [
+   {
+    "regra": "R7",
+    "tipo": "multiline",
+    "titulo": "Soma de Sales, soma de Quantity, média de Discount, soma de Profit por mês",
+    "avisos": [
+     "As séries têm escalas muito diferentes; as de menor magnitude podem ficar pouco visíveis. Use 'Índice base 100' ou 'Eixo secundário' na barra de ferramentas."
+    ]
+   },
+   {
+    "regra": "R6",
+    "tipo": "bar",
+    "titulo": "Soma de Sales por Ship Mode",
+    "avisos": []
+   },
+   {
+    "regra": "R6",
+    "tipo": "bar",
+    "titulo": "Soma de Quantity por Ship Mode",
+    "avisos": []
+   },
+   {
+    "regra": "R6",
+    "tipo": "bar",
+    "titulo": "Soma de Sales por Segment",
+    "avisos": []
+   },
+   {
+    "regra": "R6",
+    "tipo": "bar",
+    "titulo": "Soma de Quantity por Segment",
+    "avisos": []
+   },
+   {
+    "regra": "R2",
+    "tipo": "bar",
+    "titulo": "Frequência de Ship Mode",
+    "avisos": []
+   },
+   {
+    "regra": "R2",
+    "tipo": "bar",
+    "titulo": "Frequência de Segment",
+    "avisos": []
+   },
+   {
+    "regra": "R1",
+    "tipo": "histogram",
+    "titulo": "Distribuição de Sales",
+    "avisos": []
+   },
+   {
+    "regra": "R1",
+    "tipo": "histogram",
+    "titulo": "Distribuição de Quantity",
+    "avisos": []
+   },
+   {
+    "regra": "R1",
+    "tipo": "histogram",
+    "titulo": "Distribuição de Discount",
+    "avisos": []
+   },
+   {
+    "regra": "R4",
+    "tipo": "scatter",
+    "titulo": "Profit versus Sales",
+    "avisos": [
+     "Amostra de 2000 pontos para manter a legibilidade."
+    ]
+   },
+   {
+    "regra": "R4",
+    "tipo": "scatter",
+    "titulo": "Profit versus Discount",
+    "avisos": [
+     "Amostra de 2000 pontos para manter a legibilidade."
+    ]
+   }
+  ],
+  "registro": [
+   "Coluna 'Row ID' ignorada: Texto livre ou identificador (quase todos os valores são únicos).",
+   "Coluna 'Postal Code' ignorada: Parece um código (CEP, ISO etc.): somar ou tirar a média não faz sentido.",
+   "Variáveis: 4 numérica(s), 13 categórica(s), 2 temporal(is).",
+   "Agregação automática: média para 'Discount' (o nome sugere valor unitário ou taxa); soma para as demais colunas numéricas.",
+   "Coluna temporal 'Ship Date' não usada: a coluna 'Order Date' tem maior cobertura.",
+   "R7 disparada: 'Sales', 'Quantity', 'Discount', 'Profit' ao longo de 'Order Date' (granularidade mês).",
+   "R2/R3 não aplicadas a 'Country': só há uma categoria.",
+   "12 gráfico(s) gerado(s)."
+  ],
+  "tempo_s": 2.06
+ },
+ {
+  "arquivo": "05_Gapminder_paises_1952-2007.xlsx",
+  "linhas": 1704,
+  "abas": [
+   "Sheet1"
+  ],
+  "notas": [],
+  "colunas": [
+   {
+    "nome": "country",
+    "tipo": "categorical",
+    "distintos": 142,
+    "ausentes_pct": 0.0,
+    "motivo_ignorada": null
+   },
+   {
+    "nome": "continent",
+    "tipo": "categorical",
+    "distintos": 5,
+    "ausentes_pct": 0.0,
+    "motivo_ignorada": null
+   },
+   {
+    "nome": "year",
+    "tipo": "temporal",
+    "distintos": 12,
+    "ausentes_pct": 0.0,
+    "motivo_ignorada": null
+   },
+   {
+    "nome": "lifeExp",
+    "tipo": "numeric",
+    "distintos": 1626,
+    "ausentes_pct": 0.0,
+    "motivo_ignorada": null
+   },
+   {
+    "nome": "pop",
+    "tipo": "numeric",
+    "distintos": 1704,
+    "ausentes_pct": 0.0,
+    "motivo_ignorada": null
+   },
+   {
+    "nome": "gdpPercap",
+    "tipo": "numeric",
+    "distintos": 1704,
+    "ausentes_pct": 0.0,
+    "motivo_ignorada": null
+   },
+   {
+    "nome": "iso_alpha",
+    "tipo": "categorical",
+    "distintos": 141,
+    "ausentes_pct": 0.0,
+    "motivo_ignorada": null
+   },
+   {
+    "nome": "iso_num",
+    "tipo": "ignored",
+    "distintos": 141,
+    "ausentes_pct": 0.0,
+    "motivo_ignorada": "Parece um código (CEP, ISO etc.): somar ou tirar a média não faz sentido."
+   }
+  ],
+  "graficos": [
+   {
+    "regra": "R7",
+    "tipo": "multiline",
+    "titulo": "Média de lifeExp, soma de pop, média de gdpPercap por ano",
+    "avisos": [
+     "As séries têm escalas muito diferentes; as de menor magnitude podem ficar pouco visíveis. Use 'Índice base 100' ou 'Eixo secundário' na barra de ferramentas."
+    ]
+   },
+   {
+    "regra": "R6",
+    "tipo": "bar",
+    "titulo": "Média de lifeExp por continent",
+    "avisos": []
+   },
+   {
+    "regra": "R6",
+    "tipo": "bar",
+    "titulo": "Soma de pop por continent",
+    "avisos": []
+   },
+   {
+    "regra": "R6",
+    "tipo": "hbar",
+    "titulo": "Média de lifeExp por country",
+    "avisos": [
+     "Exibidas as 15 maiores categorias de 142."
+    ]
+   },
+   {
+    "regra": "R6",
+    "tipo": "hbar",
+    "titulo": "Soma de pop por country",
+    "avisos": [
+     "Exibidas as 15 maiores categorias de 142."
+    ]
+   },
+   {
+    "regra": "R2",
+    "tipo": "bar",
+    "titulo": "Frequência de continent",
+    "avisos": []
+   },
+   {
+    "regra": "R3",
+    "tipo": "hbar",
+    "titulo": "Frequência de country",
+    "avisos": [
+     "Exibidas as 15 categorias mais frequentes de 142."
+    ]
+   },
+   {
+    "regra": "R3",
+    "tipo": "hbar",
+    "titulo": "Frequência de iso_alpha",
+    "avisos": [
+     "Exibidas as 15 categorias mais frequentes de 141."
+    ]
+   },
+   {
+    "regra": "R1",
+    "tipo": "histogram",
+    "titulo": "Distribuição de lifeExp",
+    "avisos": []
+   },
+   {
+    "regra": "R1",
+    "tipo": "histogram",
+    "titulo": "Distribuição de pop",
+    "avisos": []
+   },
+   {
+    "regra": "R1",
+    "tipo": "histogram",
+    "titulo": "Distribuição de gdpPercap",
+    "avisos": []
+   },
+   {
+    "regra": "R4",
+    "tipo": "scatter",
+    "titulo": "gdpPercap versus lifeExp",
+    "avisos": []
+   }
+  ],
+  "registro": [
+   "Coluna 'iso_num' ignorada: Parece um código (CEP, ISO etc.): somar ou tirar a média não faz sentido.",
+   "Variáveis: 3 numérica(s), 3 categórica(s), 1 temporal(is).",
+   "Agregação automática: média para 'lifeExp', 'gdpPercap' (o nome sugere valor unitário ou taxa); soma para as demais colunas numéricas.",
+   "R7 disparada: 'lifeExp', 'pop', 'gdpPercap' ao longo de 'year' (granularidade ano).",
+   "12 gráfico(s) gerado(s)."
+  ],
+  "tempo_s": 0.14
+ },
+ {
+  "arquivo": "06_Clima_Seattle_2012-2015.xlsx",
+  "linhas": 1461,
+  "abas": [
+   "Sheet1"
+  ],
+  "notas": [
+   "Coluna 'date' convertida de texto para data."
+  ],
+  "colunas": [
+   {
+    "nome": "date",
+    "tipo": "temporal",
+    "distintos": 1461,
+    "ausentes_pct": 0.0,
+    "motivo_ignorada": null
+   },
+   {
+    "nome": "precipitation",
+    "tipo": "numeric",
+    "distintos": 111,
+    "ausentes_pct": 0.0,
+    "motivo_ignorada": null
+   },
+   {
+    "nome": "temp_max",
+    "tipo": "numeric",
+    "distintos": 67,
+    "ausentes_pct": 0.0,
+    "motivo_ignorada": null
+   },
+   {
+    "nome": "temp_min",
+    "tipo": "numeric",
+    "distintos": 55,
+    "ausentes_pct": 0.0,
+    "motivo_ignorada": null
+   },
+   {
+    "nome": "wind",
+    "tipo": "numeric",
+    "distintos": 79,
+    "ausentes_pct": 0.0,
+    "motivo_ignorada": null
+   },
+   {
+    "nome": "weather",
+    "tipo": "categorical",
+    "distintos": 5,
+    "ausentes_pct": 0.0,
+    "motivo_ignorada": null
+   }
+  ],
+  "graficos": [
+   {
+    "regra": "R7",
+    "tipo": "multiline",
+    "titulo": "Soma de precipitation, média de temp_max, média de temp_min, média de wind por mês",
+    "avisos": [
+     "As séries têm escalas muito diferentes; as de menor magnitude podem ficar pouco visíveis. Use 'Índice base 100' ou 'Eixo secundário' na barra de ferramentas."
+    ]
+   },
+   {
+    "regra": "R6",
+    "tipo": "bar",
+    "titulo": "Soma de precipitation por weather",
+    "avisos": []
+   },
+   {
+    "regra": "R6",
+    "tipo": "bar",
+    "titulo": "Média de temp_max por weather",
+    "avisos": []
+   },
+   {
+    "regra": "R2",
+    "tipo": "bar",
+    "titulo": "Frequência de weather",
+    "avisos": []
+   },
+   {
+    "regra": "R1",
+    "tipo": "histogram",
+    "titulo": "Distribuição de precipitation",
+    "avisos": []
+   },
+   {
+    "regra": "R1",
+    "tipo": "histogram",
+    "titulo": "Distribuição de temp_max",
+    "avisos": []
+   },
+   {
+    "regra": "R1",
+    "tipo": "histogram",
+    "titulo": "Distribuição de temp_min",
+    "avisos": []
+   },
+   {
+    "regra": "R4",
+    "tipo": "scatter",
+    "titulo": "temp_min versus temp_max",
+    "avisos": []
+   },
+   {
+    "regra": "R4",
+    "tipo": "scatter",
+    "titulo": "wind versus precipitation",
+    "avisos": []
+   }
+  ],
+  "registro": [
+   "Variáveis: 4 numérica(s), 1 categórica(s), 1 temporal(is).",
+   "Agregação automática: média para 'temp_max', 'temp_min', 'wind' (o nome sugere valor unitário ou taxa); soma para as demais colunas numéricas.",
+   "R7 disparada: 'precipitation', 'temp_max', 'temp_min', 'wind' ao longo de 'date' (granularidade mês).",
+   "9 gráfico(s) gerado(s)."
+  ],
+  "tempo_s": 0.15
+ },
+ {
+  "arquivo": "07_COVID19_America_Latina.xlsx",
+  "linhas": 4896,
+  "abas": [
+   "Sheet1"
+  ],
+  "notas": [
+   "Coluna 'Date' convertida de texto para data."
+  ],
+  "colunas": [
+   {
+    "nome": "Date",
+    "tipo": "temporal",
+    "distintos": 816,
+    "ausentes_pct": 0.0,
+    "motivo_ignorada": null
+   },
+   {
+    "nome": "Country",
+    "tipo": "categorical",
+    "distintos": 6,
+    "ausentes_pct": 0.0,
+    "motivo_ignorada": null
+   },
+   {
+    "nome": "Confirmed",
+    "tipo": "numeric",
+    "distintos": 4432,
+    "ausentes_pct": 0.0,
+    "motivo_ignorada": null
+   },
+   {
+    "nome": "Recovered",
+    "tipo": "numeric",
+    "distintos": 2766,
+    "ausentes_pct": 0.0,
+    "motivo_ignorada": null
+   },
+   {
+    "nome": "Deaths",
+    "tipo": "numeric",
+    "distintos": 4351,
+    "ausentes_pct": 0.0,
+    "motivo_ignorada": null
+   }
+  ],
+  "graficos": [
+   {
+    "regra": "R7",
+    "tipo": "multiline",
+    "titulo": "Soma de Confirmed, Recovered, Deaths por mês",
+    "avisos": [
+     "As séries têm escalas muito diferentes; as de menor magnitude podem ficar pouco visíveis. Use 'Índice base 100' ou 'Eixo secundário' na barra de ferramentas."
+    ]
+   },
+   {
+    "regra": "R6",
+    "tipo": "bar",
+    "titulo": "Soma de Confirmed por Country",
+    "avisos": []
+   },
+   {
+    "regra": "R6",
+    "tipo": "bar",
+    "titulo": "Soma de Recovered por Country",
+    "avisos": []
+   },
+   {
+    "regra": "R2",
+    "tipo": "bar",
+    "titulo": "Frequência de Country",
+    "avisos": []
+   },
+   {
+    "regra": "R1",
+    "tipo": "histogram",
+    "titulo": "Distribuição de Confirmed",
+    "avisos": []
+   },
+   {
+    "regra": "R1",
+    "tipo": "histogram",
+    "titulo": "Distribuição de Recovered",
+    "avisos": []
+   },
+   {
+    "regra": "R1",
+    "tipo": "histogram",
+    "titulo": "Distribuição de Deaths",
+    "avisos": []
+   },
+   {
+    "regra": "R4",
+    "tipo": "scatter",
+    "titulo": "Deaths versus Confirmed",
+    "avisos": [
+     "Amostra de 2000 pontos para manter a legibilidade."
+    ]
+   },
+   {
+    "regra": "R4",
+    "tipo": "scatter",
+    "titulo": "Recovered versus Confirmed",
+    "avisos": [
+     "Amostra de 2000 pontos para manter a legibilidade."
+    ]
+   }
+  ],
+  "registro": [
+   "Variáveis: 3 numérica(s), 1 categórica(s), 1 temporal(is).",
+   "R7 disparada: 'Confirmed', 'Recovered', 'Deaths' ao longo de 'Date' (granularidade mês).",
+   "9 gráfico(s) gerado(s)."
+  ],
+  "tempo_s": 0.24
+ },
+ {
+  "arquivo": "08_Tips_restaurante.xlsx",
+  "linhas": 244,
+  "abas": [
+   "Sheet1"
+  ],
+  "notas": [],
+  "colunas": [
+   {
+    "nome": "total_bill",
+    "tipo": "numeric",
+    "distintos": 229,
+    "ausentes_pct": 0.0,
+    "motivo_ignorada": null
+   },
+   {
+    "nome": "tip",
+    "tipo": "numeric",
+    "distintos": 123,
+    "ausentes_pct": 0.0,
+    "motivo_ignorada": null
+   },
+   {
+    "nome": "sex",
+    "tipo": "categorical",
+    "distintos": 2,
+    "ausentes_pct": 0.0,
+    "motivo_ignorada": null
+   },
+   {
+    "nome": "smoker",
+    "tipo": "categorical",
+    "distintos": 2,
+    "ausentes_pct": 0.0,
+    "motivo_ignorada": null
+   },
+   {
+    "nome": "day",
+    "tipo": "categorical",
+    "distintos": 4,
+    "ausentes_pct": 0.0,
+    "motivo_ignorada": null
+   },
+   {
+    "nome": "time",
+    "tipo": "categorical",
+    "distintos": 2,
+    "ausentes_pct": 0.0,
+    "motivo_ignorada": null
+   },
+   {
+    "nome": "size",
+    "tipo": "categorical",
+    "distintos": 6,
+    "ausentes_pct": 0.0,
+    "motivo_ignorada": null
+   }
+  ],
+  "graficos": [
+   {
+    "regra": "R6",
+    "tipo": "bar",
+    "titulo": "Soma de total_bill por sex",
+    "avisos": []
+   },
+   {
+    "regra": "R6",
+    "tipo": "bar",
+    "titulo": "Soma de tip por sex",
+    "avisos": []
+   },
+   {
+    "regra": "R6",
+    "tipo": "bar",
+    "titulo": "Soma de total_bill por smoker",
+    "avisos": []
+   },
+   {
+    "regra": "R6",
+    "tipo": "bar",
+    "titulo": "Soma de tip por smoker",
+    "avisos": []
+   },
+   {
+    "regra": "R2",
+    "tipo": "bar",
+    "titulo": "Frequência de sex",
+    "avisos": []
+   },
+   {
+    "regra": "R2",
+    "tipo": "bar",
+    "titulo": "Frequência de smoker",
+    "avisos": []
+   },
+   {
+    "regra": "R2",
+    "tipo": "bar",
+    "titulo": "Frequência de day",
+    "avisos": []
+   },
+   {
+    "regra": "R1",
+    "tipo": "histogram",
+    "titulo": "Distribuição de total_bill",
+    "avisos": []
+   },
+   {
+    "regra": "R1",
+    "tipo": "histogram",
+    "titulo": "Distribuição de tip",
+    "avisos": []
+   },
+   {
+    "regra": "R4",
+    "tipo": "scatter",
+    "titulo": "tip versus total_bill",
+    "avisos": []
+   }
+  ],
+  "registro": [
+   "Variáveis: 2 numérica(s), 5 categórica(s), 0 temporal(is).",
+   "10 gráfico(s) gerado(s)."
+  ],
+  "tempo_s": 0.06
+ },
+ {
+  "arquivo": "09_Passageiros_aereos_1949-1960.xlsx",
+  "linhas": 144,
+  "abas": [
+   "Sheet1"
+  ],
+  "notas": [],
+  "colunas": [
+   {
+    "nome": "year",
+    "tipo": "temporal",
+    "distintos": 12,
+    "ausentes_pct": 0.0,
+    "motivo_ignorada": null
+   },
+   {
+    "nome": "month",
+    "tipo": "categorical",
+    "distintos": 12,
+    "ausentes_pct": 0.0,
+    "motivo_ignorada": null
+   },
+   {
+    "nome": "passengers",
+    "tipo": "numeric",
+    "distintos": 118,
+    "ausentes_pct": 0.0,
+    "motivo_ignorada": null
+   }
+  ],
+  "graficos": [
+   {
+    "regra": "R5",
+    "tipo": "line",
+    "titulo": "Soma de passengers por ano",
+    "avisos": []
+   },
+   {
+    "regra": "R6",
+    "tipo": "hbar",
+    "titulo": "Soma de passengers por month",
+    "avisos": []
+   },
+   {
+    "regra": "R3",
+    "tipo": "hbar",
+    "titulo": "Frequência de month",
+    "avisos": []
+   },
+   {
+    "regra": "R1",
+    "tipo": "histogram",
+    "titulo": "Distribuição de passengers",
+    "avisos": []
+   }
+  ],
+  "registro": [
+   "Variáveis: 1 numérica(s), 1 categórica(s), 1 temporal(is).",
+   "R5 disparada: 'passengers' ao longo de 'year' (granularidade ano).",
+   "4 gráfico(s) gerado(s)."
+  ],
+  "tempo_s": 0.03
+ },
+ {
+  "arquivo": "01_vendas_completo.xlsx",
+  "linhas": 500,
+  "abas": [
+   "Dados"
+  ],
+  "notas": [],
+  "colunas": [
+   {
+    "nome": "Data",
+    "tipo": "temporal",
+    "distintos": 275,
+    "ausentes_pct": 0.0,
+    "motivo_ignorada": null
+   },
+   {
+    "nome": "Região",
+    "tipo": "categorical",
+    "distintos": 5,
+    "ausentes_pct": 0.0,
+    "motivo_ignorada": null
+   },
+   {
+    "nome": "Produto",
+    "tipo": "categorical",
+    "distintos": 8,
+    "ausentes_pct": 0.0,
+    "motivo_ignorada": null
+   },
+   {
+    "nome": "Vendedor",
+    "tipo": "categorical",
+    "distintos": 25,
+    "ausentes_pct": 0.0,
+    "motivo_ignorada": null
+   },
+   {
+    "nome": "Quantidade",
+    "tipo": "numeric",
+    "distintos": 19,
+    "ausentes_pct": 0.0,
+    "motivo_ignorada": null
+   },
+   {
+    "nome": "Receita",
+    "tipo": "numeric",
+    "distintos": 499,
+    "ausentes_pct": 0.0,
+    "motivo_ignorada": null
+   },
+   {
+    "nome": "Preço",
+    "tipo": "numeric",
+    "distintos": 459,
+    "ausentes_pct": 0.0,
+    "motivo_ignorada": null
+   }
+  ],
+  "graficos": [
+   {
+    "regra": "R7",
+    "tipo": "multiline",
+    "titulo": "Soma de Quantidade, soma de Receita, média de Preço por mês",
+    "avisos": [
+     "As séries têm escalas muito diferentes; as de menor magnitude podem ficar pouco visíveis. Use 'Índice base 100' ou 'Eixo secundário' na barra de ferramentas."
+    ]
+   },
+   {
+    "regra": "R6",
+    "tipo": "bar",
+    "titulo": "Soma de Quantidade por Região",
+    "avisos": []
+   },
+   {
+    "regra": "R6",
+    "tipo": "bar",
+    "titulo": "Soma de Receita por Região",
+    "avisos": []
+   },
+   {
+    "regra": "R6",
+    "tipo": "bar",
+    "titulo": "Soma de Quantidade por Produto",
+    "avisos": []
+   },
+   {
+    "regra": "R6",
+    "tipo": "bar",
+    "titulo": "Soma de Receita por Produto",
+    "avisos": []
+   },
+   {
+    "regra": "R2",
+    "tipo": "bar",
+    "titulo": "Frequência de Região",
+    "avisos": []
+   },
+   {
+    "regra": "R2",
+    "tipo": "bar",
+    "titulo": "Frequência de Produto",
+    "avisos": []
+   },
+   {
+    "regra": "R3",
+    "tipo": "hbar",
+    "titulo": "Frequência de Vendedor",
+    "avisos": [
+     "Exibidas as 15 categorias mais frequentes de 25."
+    ]
+   },
+   {
+    "regra": "R1",
+    "tipo": "histogram",
+    "titulo": "Distribuição de Quantidade",
+    "avisos": []
+   },
+   {
+    "regra": "R1",
+    "tipo": "histogram",
+    "titulo": "Distribuição de Receita",
+    "avisos": []
+   },
+   {
+    "regra": "R1",
+    "tipo": "histogram",
+    "titulo": "Distribuição de Preço",
+    "avisos": []
+   },
+   {
+    "regra": "R4",
+    "tipo": "scatter",
+    "titulo": "Receita versus Quantidade",
+    "avisos": []
+   }
+  ],
+  "registro": [
+   "Variáveis: 3 numérica(s), 3 categórica(s), 1 temporal(is).",
+   "Agregação automática: média para 'Preço' (o nome sugere valor unitário ou taxa); soma para as demais colunas numéricas.",
+   "R7 disparada: 'Quantidade', 'Receita', 'Preço' ao longo de 'Data' (granularidade mês).",
+   "12 gráfico(s) gerado(s)."
+  ],
+  "tempo_s": 0.11
+ },
+ {
+  "arquivo": "02_csv_brasileiro_latin1.csv",
+  "linhas": 5,
+  "abas": [],
+  "notas": [
+   "Codificação detectada: Windows-1252.",
+   "Coluna 'Data' convertida de texto para data.",
+   "Coluna 'Valor' convertida de texto para número (formato brasileiro).",
+   "Coluna 'Variação' convertida de texto para número (vírgula decimal)."
+  ],
+  "colunas": [
+   {
+    "nome": "Data",
+    "tipo": "temporal",
+    "distintos": 5,
+    "ausentes_pct": 0.0,
+    "motivo_ignorada": null
+   },
+   {
+    "nome": "Cidade",
+    "tipo": "categorical",
+    "distintos": 3,
+    "ausentes_pct": 0.0,
+    "motivo_ignorada": null
+   },
+   {
+    "nome": "Valor",
+    "tipo": "numeric",
+    "distintos": 5,
+    "ausentes_pct": 0.0,
+    "motivo_ignorada": null
+   },
+   {
+    "nome": "Variação",
+    "tipo": "numeric",
+    "distintos": 5,
+    "ausentes_pct": 0.0,
+    "motivo_ignorada": null
+   }
+  ],
+  "graficos": [
+   {
+    "regra": "R7",
+    "tipo": "multiline",
+    "titulo": "Soma de Valor, Variação por mês",
+    "avisos": [
+     "As séries têm escalas muito diferentes; as de menor magnitude podem ficar pouco visíveis. Use 'Índice base 100' ou 'Eixo secundário' na barra de ferramentas."
+    ]
+   },
+   {
+    "regra": "R6",
+    "tipo": "bar",
+    "titulo": "Soma de Valor por Cidade",
+    "avisos": []
+   },
+   {
+    "regra": "R6",
+    "tipo": "bar",
+    "titulo": "Soma de Variação por Cidade",
+    "avisos": []
+   },
+   {
+    "regra": "R2",
+    "tipo": "bar",
+    "titulo": "Frequência de Cidade",
+    "avisos": []
+   },
+   {
+    "regra": "R1",
+    "tipo": "histogram",
+    "titulo": "Distribuição de Valor",
+    "avisos": []
+   },
+   {
+    "regra": "R1",
+    "tipo": "histogram",
+    "titulo": "Distribuição de Variação",
+    "avisos": []
+   },
+   {
+    "regra": "R4",
+    "tipo": "scatter",
+    "titulo": "Variação versus Valor",
+    "avisos": []
+   }
+  ],
+  "registro": [
+   "Variáveis: 2 numérica(s), 1 categórica(s), 1 temporal(is).",
+   "R7 disparada: 'Valor', 'Variação' ao longo de 'Data' (granularidade mês).",
+   "R4: correlações fracas (|r| < 0.2); exibido apenas o par mais correlacionado.",
+   "7 gráfico(s) gerado(s)."
+  ],
+  "tempo_s": 0.14
+ },
+ {
+  "arquivo": "03_planilha_suja.csv",
+  "linhas": 5,
+  "abas": [],
+  "notas": [
+   "Nome de coluna duplicado 'Nome' renomeado para 'Nome (2)'.",
+   "1 linha(s) totalmente vazia(s) removida(s).",
+   "1 coluna(s) totalmente vazia(s) removida(s).",
+   "Coluna 'Idade' convertida de texto para número (inteiros).",
+   "Coluna 'Cadastro' convertida de texto para data."
+  ],
+  "colunas": [
+   {
+    "nome": "Nome",
+    "tipo": "categorical",
+    "distintos": 4,
+    "ausentes_pct": 20.0,
+    "motivo_ignorada": null
+   },
+   {
+    "nome": "Nome (2)",
+    "tipo": "categorical",
+    "distintos": 5,
+    "ausentes_pct": 0.0,
+    "motivo_ignorada": null
+   },
+   {
+    "nome": "Idade",
+    "tipo": "numeric",
+    "distintos": 4,
+    "ausentes_pct": 20.0,
+    "motivo_ignorada": null
+   },
+   {
+    "nome": "Cadastro",
+    "tipo": "temporal",
+    "distintos": 5,
+    "ausentes_pct": 0.0,
+    "motivo_ignorada": null
+   }
+  ],
+  "graficos": [
+   {
+    "regra": "R5",
+    "tipo": "line",
+    "titulo": "Média de Idade por mês",
+    "avisos": []
+   },
+   {
+    "regra": "R6",
+    "tipo": "bar",
+    "titulo": "Média de Idade por Nome (2)",
+    "avisos": []
+   },
+   {
+    "regra": "R6",
+    "tipo": "bar",
+    "titulo": "Média de Idade por Nome",
+    "avisos": []
+   },
+   {
+    "regra": "R2",
+    "tipo": "bar",
+    "titulo": "Frequência de Nome (2)",
+    "avisos": []
+   },
+   {
+    "regra": "R2",
+    "tipo": "bar",
+    "titulo": "Frequência de Nome",
+    "avisos": []
+   },
+   {
+    "regra": "R1",
+    "tipo": "histogram",
+    "titulo": "Distribuição de Idade",
+    "avisos": []
+   }
+  ],
+  "registro": [
+   "Variáveis: 1 numérica(s), 2 categórica(s), 1 temporal(is).",
+   "Agregação automática: média para 'Idade' (o nome sugere valor unitário ou taxa); soma para as demais colunas numéricas.",
+   "R5 disparada: 'Idade' ao longo de 'Cadastro' (granularidade mês).",
+   "6 gráfico(s) gerado(s)."
+  ],
+  "tempo_s": 0.03
+ },
+ {
+  "arquivo": "04_uma_coluna.csv",
+  "linhas": 100,
+  "abas": [],
+  "notas": [
+   "Coluna 'Valor' convertida de texto para número (ponto decimal)."
+  ],
+  "colunas": [
+   {
+    "nome": "Valor",
+    "tipo": "numeric",
+    "distintos": 100,
+    "ausentes_pct": 0.0,
+    "motivo_ignorada": null
+   }
+  ],
+  "graficos": [
+   {
+    "regra": "R1",
+    "tipo": "histogram",
+    "titulo": "Distribuição de Valor",
+    "avisos": []
+   }
+  ],
+  "registro": [
+   "Variáveis: 1 numérica(s), 0 categórica(s), 0 temporal(is).",
+   "1 gráfico(s) gerado(s)."
+  ],
+  "tempo_s": 0.01
+ },
+ {
+  "arquivo": "05_coluna_constante.csv",
+  "linhas": 50,
+  "abas": [],
+  "notas": [
+   "Coluna 'Fixo' convertida de texto para número (ponto decimal)."
+  ],
+  "colunas": [
+   {
+    "nome": "Fixo",
+    "tipo": "numeric",
+    "distintos": 1,
+    "ausentes_pct": 0.0,
+    "motivo_ignorada": null
+   },
+   {
+    "nome": "Grupo",
+    "tipo": "categorical",
+    "distintos": 2,
+    "ausentes_pct": 0.0,
+    "motivo_ignorada": null
+   }
+  ],
+  "graficos": [
+   {
+    "regra": "R6",
+    "tipo": "bar",
+    "titulo": "Soma de Fixo por Grupo",
+    "avisos": []
+   },
+   {
+    "regra": "R2",
+    "tipo": "bar",
+    "titulo": "Frequência de Grupo",
+    "avisos": []
+   }
+  ],
+  "registro": [
+   "Variáveis: 1 numérica(s), 1 categórica(s), 0 temporal(is).",
+   "R1 não aplicada a 'Fixo': valor constante.",
+   "2 gráfico(s) gerado(s)."
+  ],
+  "tempo_s": 0.02
+ },
+ {
+  "arquivo": "06_alta_cardinalidade.csv",
+  "linhas": 400,
+  "abas": [],
+  "notas": [
+   "Coluna 'Valor' convertida de texto para número (ponto decimal)."
+  ],
+  "colunas": [
+   {
+    "nome": "Cliente",
+    "tipo": "categorical",
+    "distintos": 114,
+    "ausentes_pct": 0.0,
+    "motivo_ignorada": null
+   },
+   {
+    "nome": "Valor",
+    "tipo": "numeric",
+    "distintos": 397,
+    "ausentes_pct": 0.0,
+    "motivo_ignorada": null
+   }
+  ],
+  "graficos": [
+   {
+    "regra": "R6",
+    "tipo": "hbar",
+    "titulo": "Soma de Valor por Cliente",
+    "avisos": [
+     "Exibidas as 15 maiores categorias de 114."
+    ]
+   },
+   {
+    "regra": "R3",
+    "tipo": "hbar",
+    "titulo": "Frequência de Cliente",
+    "avisos": [
+     "Exibidas as 15 categorias mais frequentes de 114."
+    ]
+   },
+   {
+    "regra": "R1",
+    "tipo": "histogram",
+    "titulo": "Distribuição de Valor",
+    "avisos": []
+   }
+  ],
+  "registro": [
+   "Variáveis: 1 numérica(s), 1 categórica(s), 0 temporal(is).",
+   "3 gráfico(s) gerado(s)."
+  ],
+  "tempo_s": 0.02
+ },
+ {
+  "arquivo": "07_identificadores_e_texto.csv",
+  "linhas": 60,
+  "abas": [],
+  "notas": [
+   "Coluna 'ID' convertida de texto para número (inteiros).",
+   "Coluna 'Valor' convertida de texto para número (ponto decimal)."
+  ],
+  "colunas": [
+   {
+    "nome": "ID",
+    "tipo": "ignored",
+    "distintos": 60,
+    "ausentes_pct": 0.0,
+    "motivo_ignorada": "Parece um identificador (valores únicos)."
+   },
+   {
+    "nome": "Descrição",
+    "tipo": "ignored",
+    "distintos": 60,
+    "ausentes_pct": 0.0,
+    "motivo_ignorada": "Texto livre ou identificador (quase todos os valores são únicos)."
+   },
+   {
+    "nome": "Valor",
+    "tipo": "numeric",
+    "distintos": 58,
+    "ausentes_pct": 0.0,
+    "motivo_ignorada": null
+   },
+   {
+    "nome": "Categoria",
+    "tipo": "categorical",
+    "distintos": 3,
+    "ausentes_pct": 0.0,
+    "motivo_ignorada": null
+   }
+  ],
+  "graficos": [
+   {
+    "regra": "R6",
+    "tipo": "bar",
+    "titulo": "Soma de Valor por Categoria",
+    "avisos": []
+   },
+   {
+    "regra": "R2",
+    "tipo": "bar",
+    "titulo": "Frequência de Categoria",
+    "avisos": []
+   },
+   {
+    "regra": "R1",
+    "tipo": "histogram",
+    "titulo": "Distribuição de Valor",
+    "avisos": []
+   }
+  ],
+  "registro": [
+   "Coluna 'ID' ignorada: Parece um identificador (valores únicos).",
+   "Coluna 'Descrição' ignorada: Texto livre ou identificador (quase todos os valores são únicos).",
+   "Variáveis: 1 numérica(s), 1 categórica(s), 0 temporal(is).",
+   "3 gráfico(s) gerado(s)."
+  ],
+  "tempo_s": 0.03
+ }
+]

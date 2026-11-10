@@ -1,0 +1,17 @@
+# Implantacao no Render (plano gratuito) a partir do Dockerfile deste repositorio.
+# No painel do Render: New > Blueprint > escolha o repositorio. Depois preencha as variaveis marcadas com sync: false.
+services:
+  - type: web
+    name: dashgen
+    runtime: docker
+    plan: free
+    healthCheckPath: /api/health
+    envVars:
+      - key: SESSION_TTL
+        value: "7200"
+      - key: LLM_PROVIDER        # groq (plano gratuito) ou xai (Grok, pago)
+        value: groq
+      - key: LLM_API_KEY         # opcional: chave do assistente de IA usada por todos os visitantes
+        sync: false
+      - key: MONGO_URI           # opcional: MongoDB Atlas (M0 gratuito) para guardar as configuracoes salvas
+        sync: false
