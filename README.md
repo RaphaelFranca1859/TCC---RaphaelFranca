@@ -20,6 +20,7 @@ Fluxo das três telas (Figura 3): **1. Enviar planilha**, **2. Revisar tipos**, 
 
 - **Menu lateral recolhível.** O botão de três barras no topo abre e fecha o menu, que reúne as etapas, as ferramentas e, na tela do dashboard, os filtros. No computador o menu empurra o conteúdo e a escolha (aberto ou fechado) é lembrada; no celular ele vira uma gaveta sobreposta, que fecha ao tocar fora ou com Esc. Com o menu fechado, um selo no botão mostra quantos filtros estão ativos.
 - **Cores dos botões.** Verde para aceitar, avançar e salvar; vermelho para cancelar, voltar, fechar e descartar; azul-índigo para ações neutras (exportar, abrir painel). Todo botão tem preenchimento próprio, visível sem passar o mouse, e leva um ícone ou seta além da cor, para que a cor não seja a única pista (daltonismo).
+- **Identidade visual.** O logo é um quadrado de planilha (grade) com três barras ascendentes, em índigo e verde, desenhado em SVG (`frontend/public/favicon.svg`, usado como ícone da aba, e `frontend/src/components/Logo.jsx`, usado no cabeçalho). Por ser vetorial, fica nítido em qualquer tamanho e funciona nos dois temas.
 - **Tema claro e escuro.** Alternado no topo ou no menu; segue a preferência do sistema na primeira visita.
 - **Paleta dos gráficos.** Oito matizes em ordem fixa, ajustados para cada tema. Gráficos de série única recebem um matiz por gráfico; gráficos de setores e de linhas múltiplas usam um matiz por categoria ou série.
 - **Assistente de IA.** Painel lateral de perguntas em linguagem natural (ver seção própria).

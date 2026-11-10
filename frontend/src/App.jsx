@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useState } from 'react'
 import Stepper from './components/Stepper.jsx'
 import Sidebar from './components/Sidebar.jsx'
+import Logo from './components/Logo.jsx'
 import UploadStep from './components/UploadStep.jsx'
 import TypesStep from './components/TypesStep.jsx'
 import DashboardStep from './components/DashboardStep.jsx'
@@ -60,7 +61,7 @@ export default function App() {
             {!menuOpen && filterCount > 0 && <span className="dot" title={`${filterCount} filtro(s) ativo(s)`}>{filterCount}</span>}
           </button>
           <div className="brand">
-            <span className="logo" aria-hidden="true">📊</span>
+            <Logo className="logo" />
             <div>
               <h1>DashGen</h1>
               <p>Dashboards interativos a partir de planilhas, sem configuração</p>

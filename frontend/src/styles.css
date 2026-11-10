@@ -40,7 +40,7 @@ a { color: var(--brand); }
   padding: 8px 20px 8px 12px; background: var(--card); border-bottom: 1px solid var(--line); position: sticky; top: 0; z-index: 30; }
 .brand { display: flex; gap: 12px; align-items: center; margin-right: auto; min-width: 0; }
 .brand p { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-.brand .logo { font-size: 1.8rem; }
+.brand .logo { flex: none; width: 40px; height: 40px; }
 .brand h1 { font-size: 1.15rem; } .brand p { margin: 0; font-size: .78rem; color: var(--muted); }
 .hamburger { position: relative; display: grid; place-items: center; width: 44px; height: 44px; flex: none; cursor: pointer;
   border-radius: 10px; border: 1px solid var(--btn-line); background: var(--btn-bg); color: var(--btn-ink); }
